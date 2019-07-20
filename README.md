@@ -24,11 +24,11 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
 
 - **similarities** in *product* and *production* automation:
   - requirements for embedded system must be derived from requirements for embedding system
-  - strong realtime, safety and reliability
+  - strong realtime, safety, reliability, maintainability and evolvability requirements
   - rising complexity and quality concerns
 - **differences** in *product* and *production* automation:
   - mass production vs unique & custom-made plants
-  - resource constraints
+  - resource constraints (for product automation systems: weight, cost, energy consumption, mounting space)
   - relationship between manufacturer, supplier, operator and user
   - operation and maintenance
   - device technologies and programming languages
