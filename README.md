@@ -19,7 +19,19 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
 |                | Device Technology | Programming Languages | Examples |
 |----------------|-------------------|-----------------------|----------|
 | **Product**    | **Microcontrollers**, **Programmable Hardware**, Digital Signal Processors | C, Assembler, MATLAB/Simulink, Java | Car electronics |
-| **Production** | **Programmable Logic Controllers (PLC)**, Distributed Control Systems (DCS), Indurstial PCs (IPC) | IL, LD/RLL, FBD, SFC, CFC | Manufacturing Control, Logistics, Chemical Process Control |
+| **Production** | **Programmable Logic Controllers (PLC)**, Distributed Control Systems (DCS), Industrial PCs (IPC) | IL, LD/RLL, FBD, SFC, CFC | Manufacturing Control, Logistics, Chemical Process Control |
+
+
+- **similarities** in *product* and *production* automation:
+  - requirements for embedded system must be derived from requirements for embedding system
+  - strong realtime, safety and reliability
+  - rising complexity and quality concerns
+- **differences** in *product* and *production* automation:
+  - mass production vs unique & custom-made plants
+  - resource constraints
+  - relationship between manufacturer, supplier, operator and user
+  - operation and maintenance
+  - device technologies and programming languages
 
 # Microcontrollers
 - Peripherals
