@@ -34,45 +34,59 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
   - device technologies and programming languages
 
 # Microcontrollers
-- Peripherals
-  - a peripheral is a hardware/device with human readable/writeable input/output interfaces
+- *microcontrollers* are stand-alone devices for embedded applications
+- often made up of **microprocessor + memory + I/O + additional peripherals**
+- **only complete specific tasks**
+- **microcontrollers with the same microprocessor are considered to be in the same family**
+- **Peripherals:**
+  - a peripheral is a hardware/device with input/output interfaces
   - common peripherals are keyboards, speakers, headsets, ...
-  - keyboard: user types in a sequence of characters as input, which is then piped through hardware, then to software, to then finally appear on the screen
-- Digital I/O
-  - PIN
-  - PORT
-  - DDR
-- Timers, Counters, PWM
-- DA/AD Conversion
+- **Digital I/O:**
+  - we can access external hardware via digital I/O pins
+  - ports are made up of n pins on an n-bit architecture
+  - available registers are: PIN (Port Input Register), PORT (Port Register), DDR (Data Direction Register)
+  - PIN:
+    - read only
+    - contains high or low bits of all pins
+    - usually used for reading input pins
+  - PORT:
+    - read/write
+    - specifies the output bits
+    - some ATMega microcontrollers use this register for activating Pull-Up resistors for input pins
+  - DDR:
+    - read/write
+    - specify data direction of each pin of a port
+- **Timers, Counters, PWM:**
+- **DA/AD Conversion:**
   - Digital/Analog Conversion: PWM, 
   - Analog/Digital Conversion: SAR-Network
 
 # Data buses
-- Topologies
-- Physical layer - problems and solutions
-- Data link layer (Logic link control and medium access controll)
-- I²C, CAN, FlexRay, Profibus
+- **Topologies:**
+- **Physical layer - problems and solutions:**
+- **Data link layer (Logic link control and medium access controll):**
+- **I²C, CAN, FlexRay, Profibus:**
 
 # Programmable logic controllers
-- Discrete controls
-- Languages
-- Standard function blocks
+- **Discrete controls:**
+- **Languages:**
+- **Standard function blocks:**
 
 # Real time
-- Hard/soft realtime
-- Deadlocks
-- Priority inversion and how to avoid it
-- Sporadic and periodic scheduling
+- **Hard/soft realtime:**
+- **Deadlocks:**
+- **Priority inversion and how to avoid it:**
+- **Sporadic and periodic scheduling:**
 
 # Embedded software design
-- Development process models
-- Functional requirements
-- Quality requirements
-- Architecture
+- **Development process models:**
+- **Functional requirements:**
+- **Quality requirements:**
+- **Architecture:**
 
 # Softwaredevelopment with Simulink
-- MATLAB/Simulink
-- Subsystems
-- Buses
-- Embdedded code generation
-- Model-based testing
+- **MATLAB/Simulink:**
+- **Subsystems:**
+- **Buses:**
+- **Embdedded code generation:**
+- **Model-based testing:**
