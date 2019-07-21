@@ -40,9 +40,9 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
 - **microcontrollers with the same microprocessor are considered to be in the same family**
 - **Peripherals:**
   - a peripheral is a hardware/device with input/output interfaces
-  - common peripherals are keyboards, speakers, headsets, ...
+  - common peripherals: keyboard, speaker, USB-Port, Audio/Headphone-Jack, HDMI-Interface, ...
 - **Digital I/O:**
-  - we can access external hardware via digital I/O pins
+  - we can access or monitor external hardware via digital I/O pins
   - ports are made up of n pins on an n-bit architecture
   - available registers are: PIN (Port Input Register), PORT (Port Register), DDR (Data Direction Register)
   - PIN:
@@ -56,13 +56,34 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
   - DDR:
     - read/write
     - specify data direction of each pin of a port
+  - **Problems with Digital Input**:
+    - signal does not always have a well-defined level
+    - signal noise
+    - signal bouncing
+  - **Solutions**:
+    - schmitt-trigger
+    - low-pass-filter
+    - noise-cancellation
+    - sampling the input multiple times
 - **Timers, Counters, PWM:**
+  - interrupt: interrupt service routine is executed if specific interrupt occured
+  - polling: periodically check for state-change and act accordingly
+  - counter:
+    - counts external events
+    - for example number of rising edges on PIN2
+  - timer:
+    - is basically a counter
+    - counts number of clock cycles (with or without prescaler)
+  - timers/counters have a counter-register which can be incremented or decremented
+  - important flags for timers/counters are: start/stop-flag, interrupt-enable/disable flag, prescaler and mode of operation
+  - other features of timers/counters: input capture, output compare, pulse width modulation 
 - **DA/AD Conversion:**
-  - Digital/Analog Conversion: PWM, 
-  - Analog/Digital Conversion: SAR-Network
+  - Digital/Analog Conversion: PWM, R2R-Network
+  - Analog/Digital Conversion: SAR-Network, Tracking-Converter, Flash-Converter
 
 # Data buses
 - **Topologies:**
+  - star, ring, bus, line, mesh, full-mesh
 - **Physical layer - problems and solutions:**
 - **Data link layer (Logic link control and medium access controll):**
 - **I²C, CAN, FlexRay, Profibus:**
@@ -74,12 +95,16 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
 
 # Real time
 - **Hard/soft realtime:**
+  - hard realtime: task is always completed under given threshold amount of time
+  - soft realtime: task is on average completed under given threshold amount of time
 - **Deadlocks:**
+  - two or more processes try to access the same resource at the same time, which causes them to block each other in a loop
 - **Priority inversion and how to avoid it:**
 - **Sporadic and periodic scheduling:**
 
 # Embedded software design
 - **Development process models:**
+  - V-Model
 - **Functional requirements:**
 - **Quality requirements:**
 - **Architecture:**
