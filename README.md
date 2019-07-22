@@ -83,15 +83,48 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
 
 # Data buses
 - **Topologies:**
-  - star, ring, bus, line, mesh, full-mesh
-- **Physical layer - problems and solutions:**
+  - **bus:**
+    - only one partner can send at a time
+    - cheap
+    - collisions can occur
+  - **star:** 
+    - multiple partners can send at the same time
+    - expensive and more wiring required
+  - **ring:**
+    - high quality of service
+    - no multiple access
+    - complex
+- **Physical layer:**
+  - defines how bit streams are transported
+  - mechanical and electrical characteristics
+  - bit encoding
+  - synchronization
 - **Data link layer (Logic link control and medium access controll):**
+  - defines how messages are transported
+  - frame formats
+  - medium access
+  - error correction and flow control
+  - **medium acces controls (MAC):**
+    - CSMA/CR (collision resolution)
+    - CSMA/CD (collision detection)
+    - master-slave
+    - aloha
 - **I²C, CAN, FlexRay, Profibus:**
-
+  - **I²C (Inter integrated circuit):**
+    - intra board communication
+  - **CAN (Controller Area Network):**
+    - intra car communication
+  - **FlexRay:**
+    - intra car communication with real time and higher data rates
+  - **Process Field Bus(PROFIBUS):**
+    - industrial controllers
 # Programmable logic controllers
-- **Discrete controls:**
+- supposed to monitor and plot variables
+- variables can be plotted as they come (continuous) or in classified form (discrete)
 - **Languages:**
-- **Standard function blocks:**
+  - function block diagramm (FBD)
+  - ladder diagram (LD)
+  - instruction list (IL)
 
 # Real time
 - **Hard/soft realtime:**
