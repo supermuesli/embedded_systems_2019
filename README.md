@@ -130,17 +130,48 @@ Markdown of Embedded Systems 2019 @ RWTH Aachen University
 - **Hard/soft realtime:**
   - hard realtime: task is always completed under given threshold amount of time
   - soft realtime: task is on average completed under given threshold amount of time
+  - a watchdog can help meeting the time threshold constraint
 - **Deadlocks:**
-  - two or more processes try to access the same resource at the same time, which causes them to block each other in a loop
-- **Priority inversion and how to avoid it:**
+  - classic deadlock:
+    - process A holds resource R1 and needs resource R2
+    - process A is preempted process B
+    - process B holds resource R2 and needs resource R1
+    - oh fuck
+  - priority inversion:
+    - process A has high priority and need resource R
+    - process B has ulrta low priority and currently holds resource R
+    - oh fuck
+    - fix like this: let B inherit the priority of A and let B be non-preemptable by processes with lower priority
 - **Sporadic and periodic scheduling:**
+  - 
 
 # Embedded software design
 - **Development process models:**
-  - V-Model
+  - waterfall
+  - spiral
+  - extreme programming
+  - v-modell
 - **Functional requirements:**
+  - what it does
 - **Quality requirements:**
+  - how good it does it:
+    - **system cost**
+    - **power consumption**
+    - **mounting space**
+    - dependability
+    - modifiability
+    - integrability
+    - reusability
+    - testability
+    - performance
+    - decomposability
+    - marketability
+    - system qualities
 - **Architecture:**
+  - defines constraints on the implementation
+  - dictates organizational structure
+  - inhibits or enables a systems quality
+  - it is possible to predict system quality by studying the architecture
 
 # Softwaredevelopment with Simulink
 - **MATLAB/Simulink:**
